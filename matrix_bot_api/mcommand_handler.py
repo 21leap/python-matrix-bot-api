@@ -11,7 +11,7 @@ class MCommandHandler(MHandler):
     # command  - String of command to handle
     # handle_callback - Function to call if message contains command
     # cmd_char - Character that denotes a command. '!' by default
-    def __init__(self, command, handle_callback, cmd_char='!'):
+    def __init__(self, command, handle_callback, cmd_char='.'):
         MHandler.__init__(self, self.test_command, handle_callback)
         self.command = command
         self.cmd_char = cmd_char
